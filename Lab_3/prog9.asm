@@ -56,10 +56,8 @@ main PROC
         je LAST
 
         cmp i, 0
-        jg PRINTNOT
-
-        jmp PI
-    PRINTNOT:
+        jg ENDER
+        
         push eax
         push n
         push i
@@ -67,7 +65,7 @@ main PROC
         pop i
         pop n
         pop eax
-    PI:
+
         push eax
         push n
         push i
